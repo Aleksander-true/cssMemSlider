@@ -1,6 +1,5 @@
 .slider {
   box-sizing: border-box;
-  position: relative;
   flex-direction: column;
   background-color: rgb(47, 47, 47);
   overflow: hidden;
@@ -20,32 +19,30 @@
 .controls {
   display: flex;
   order: 2;
-  cursor: pointer;
 }
 
 .bullet {
   width: 0.5em;
   height: 0.5em;
   border-radius: 50%;
-  background-color: rgb(68, 113, 197);
-  border: 0.2em solid rgb(68, 113, 197);
+  background-color: #4471c5;
+  border: 0.2em solid #4471c5;
 }
 
 .label-bullet {
   padding: 0.5em;
   display: block;
+  cursor: pointer;
 }
 
 .label-bullet:hover .bullet {
-  background-color: white;
-  border-color: white;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .slide_wrapper {
   width: 1200px;
-
   margin: 0 auto;
-  position: relative;
   overflow: hidden;
   font-size: 0;
   border-radius: 3%;
