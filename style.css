@@ -1,0 +1,83 @@
+.slider {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: grey;
+  overflow: hidden;
+  width: 100%;
+  padding: 10%;
+  font-size: 10px;
+}
+
+.controls {
+  display: flex;
+  column-gap: 2%;
+  order: 2;
+  width: 50%;
+}
+
+.label-bullet {
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  border: 0.5em solid #fff;
+  background-color: #fff;
+}
+
+.slide_wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4%;
+  font-size: 0;
+  border-radius: 5%;
+}
+
+.input-bullet {
+  width: 0;
+  height: 0;
+}
+
+.slide_container {
+  width: 1000%;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  width: 10%;
+  height: 500px;
+  order: 1;
+}
+
+.text {
+  order: 3;
+}
+
+#slide1:checked ~ .slide_wrapper .slide_container {
+  transform: translate(0);
+}
+
+#slide2:checked ~ .slide_wrapper .slide_container {
+  transform: translate(-10%);
+}
+
+#slide3:checked ~ .slide_wrapper .slide_container {
+  transform: translate(-20%);
+}
+#slide4:checked ~ .slide_wrapper .slide_container {
+  transform: translate(-30%);
+}
+#slide5:checked ~ .slide_wrapper .slide_container {
+  transform: translate(-40%);
+}
+#slide6:checked ~ .slide_wrapper .slide_container {
+  transform: translate(-50%);
+}
+#slide7:checked ~ .slide_wrapper .slide_container {
+  transform: translate(-60%);
+}
+#slide8:checked ~ .slide_wrapper .slide_container {
+  transform: translate(-70%);
+}
