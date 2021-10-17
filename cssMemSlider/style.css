@@ -17,7 +17,7 @@ body {
 
 .panel {
   display: flex;
-  width: 1200px;
+  width: 65rem;
   margin: 2% auto;
   order: 2;
   justify-content: space-between;
@@ -54,7 +54,7 @@ body {
 }
 
 .slide_wrapper {
-  width: 1200px;
+  width: 65rem;
   margin: 0 auto;
   overflow: hidden;
   font-size: 0;
@@ -68,7 +68,7 @@ body {
 
 .slide_container {
   width: 1000%;
-  height: calc(1200px * 0.75);
+  height: calc(65rem * 0.75);
   transition: transform 1s ease-in-out;
 }
 
